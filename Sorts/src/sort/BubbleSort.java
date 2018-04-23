@@ -26,7 +26,7 @@ class BubbleSort implements SortAlgorithm {
         do {
             swap = false;
             for (int count = 0; count < last-1; count++) {
-                if (less(array[count], array[count + 1])) {
+                if (less(array[count + 1], array[count])) {
                     swap = swap(array, count, count + 1);
                 }
             }
